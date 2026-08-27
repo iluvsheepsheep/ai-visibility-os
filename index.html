@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI Visibility OS internal dashboard prototype." />
+    <title>AI Visibility OS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card">
+        <div>
+          <p class="eyebrow">Internal visibility command center</p>
+          <h1>AI Visibility OS</h1>
+          <p class="hero-copy">Set up a company profile and preview a simple visibility dashboard for SEO, GEO, and AEO planning.</p>
+        </div>
+        <div class="hero-badge"><span>Mock analysis</span><strong>v0.1</strong></div>
+      </section>
+
+      <div class="layout-grid">
+        <section class="panel setup-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Step 1</p>
+            <h2>Company setup</h2>
+            <p>Enter the core details future crawlers and AI analysis agents will use.</p>
+          </div>
+
+          <form id="setup-form" class="setup-form">
+            <label>Company name<input id="company-name" value="Acme Growth Studio" /></label>
+            <label>Website URL<input id="website-url" value="https://acmegrowth.example" /></label>
+            <label>Main location<input id="main-location" value="Austin, Texas" /></label>
+            <label>Products / services<textarea id="products-services" rows="4">B2B SEO strategy, content operations, and AI search readiness consulting</textarea></label>
+            <label>Competitors<input id="competitors" value="BrightEdge, Semrush, Conductor" /></label>
+            <button type="submit">Analyze My Visibility</button>
+          </form>
+        </section>
+
+        <section class="panel dashboard-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Step 2</p>
+            <h2>Visibility dashboard</h2>
+            <p id="report-status">Run the sample analysis to populate the dashboard.</p>
+          </div>
+
+          <div class="score-grid" id="score-grid"></div>
+
+          <div class="insight-grid">
+            <article class="insight-card">
+              <h3>Competitors</h3>
+              <div class="chip-list" id="competitor-list"></div>
+            </article>
+            <article class="insight-card">
+              <h3>Top Opportunities</h3>
+              <ul id="opportunity-list"></ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

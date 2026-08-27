@@ -15,7 +15,7 @@
           <h1>AI Visibility OS</h1>
           <p class="hero-copy">Set up a company profile and preview a simple visibility dashboard for SEO, GEO, and AEO planning.</p>
         </div>
-        <div class="hero-badge"><span>Mock analysis</span><strong>v0.1</strong></div>
+        <div class="hero-badge"><span>Mock analysis</span><strong>v0.2</strong></div>
       </section>
 
       <div class="layout-grid">
@@ -43,6 +43,21 @@
             <p id="report-status">Run the sample analysis to populate the dashboard.</p>
           </div>
 
+          <article class="status-card" aria-labelledby="analysis-status-title">
+            <div>
+              <p class="eyebrow">Analysis Status</p>
+              <h3 id="analysis-status-title">Prototype data separation</h3>
+            </div>
+            <div id="status-details"></div>
+          </article>
+
+          <div class="score-section-heading">
+            <div>
+              <p class="eyebrow">Mock score model</p>
+              <h2>Planning scores</h2>
+            </div>
+            <p>Prepared for real crawler and AI-analysis inputs in the next version.</p>
+          </div>
           <div class="score-grid" id="score-grid"></div>
 
           <div class="insight-grid">
@@ -51,12 +66,21 @@
               <div class="chip-list" id="competitor-list"></div>
             </article>
             <article class="insight-card">
-              <h3>Top Opportunities</h3>
-              <ul id="opportunity-list"></ul>
+              <h3>Future analysis pipeline</h3>
+              <ul class="pipeline-list" id="pipeline-list"></ul>
             </article>
           </div>
         </section>
       </div>
+
+      <section class="panel recommendation-panel">
+        <div class="section-heading">
+          <p class="eyebrow">AI Recommendations</p>
+          <h2>Recommended next actions</h2>
+          <p>Recommendation cards are mock planning guidance until a real website crawler and AI evidence review are connected.</p>
+        </div>
+        <div class="recommendation-list" id="recommendation-list"></div>
+      </section>
     </main>
     <script type="module" src="app.js"></script>
   </body>
